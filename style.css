@@ -1,0 +1,239 @@
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+// <weight>: Use a value from 100 to 700
+.josefin-sans-<uniquifier> {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container { 
+    width: 100%;
+    height: 100vh;
+    background: url(images/fall-3738161_1920.jpg) center no-repeat, linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8));
+    background-size: cover;
+  }
+
+  .text-container { 
+    color: #fff;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 200px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner-text { 
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner-text h1 { 
+    font-family: "Montserrat", sans-serif;
+    font-size: 80px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+  }
+
+  .banner-text p { 
+    color: #eee;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    align-self: flex-end
+  }
+
+  .btns { 
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .btn { 
+    width: 140px;
+    padding: 7px 14px;
+    border-radius: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    transition-duration: 0.3s;
+    outline: none;
+  }
+
+  .login-btn { 
+    background-color: rgba(247, 193, 59, 0.9);
+    transition-duration: 0.3s;
+  }
+
+  .signup-btn { 
+    background-color: transparent;
+  }
+
+  .login-btn:hover { 
+    background-color: rgba(247, 193, 59, 1);
+    transition: background-color 0.3s ease;
+  }
+
+  .signup-btn:hover { 
+    background-color: rgba(192, 192, 192, 0.4);
+  }
+
+  .btn:hover { 
+    transform: translateY(-2px);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .btn:active { 
+    transform: translateY(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.model { 
+    width: 390px;
+    background: url(images/fall-3738161_1920.jpg) center no-repeat, linear-gradient(rgba(0, 0, 0, 0.5), rgba(129, 129, 129, 0.7));
+    background-size: cover;
+    border-radius: 20px;
+    border: rgba(255, 255, 255, 0.7) 1px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 10px;
+    height: 500px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.display { 
+    opacity: 1;
+    visibility: visible;
+}
+
+.x-btn { 
+    position: absolute;
+    right: 23px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.fa-solid { 
+    font-size: 23px;
+    color: #fff;
+}
+
+.form-text-container { 
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 150px;
+    margin: 80px 0 70px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-header { 
+    color: #fff;
+    text-align: center;
+}
+
+.form-header h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.form-header h3 { 
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+}
+
+form { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group { 
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.input-group input { 
+    width: 300px;
+    border-radius: 50px;
+    outline: none;
+    font-family: "Josefin Sans", sans-serif;
+    size: 0.7rem;
+    letter-spacing: 0.7px;
+    text-indent: 46px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 5px;
+    padding-bottom: 2px;
+    color: #fff;
+    border: none;
+}
+
+.input-group i { 
+    color: rgba(247, 193, 59, 1);
+    font-size: 0.7rem;
+    position: absolute;
+    top: 7px;
+    left: 20px;
+}
+
+form button { 
+    width: 295px;
+    background-color: rgba(247, 193, 59, 1);
+    margin-top: 10px;
+    padding: 7px 17px 4px 17px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease-in-out;
+}
+
+form button:hover { 
+  background-color: rgba(247, 193, 59, 0.7);
+  transition: background-color 0.3s ease-in-out;
+  transform: translateY(-2px);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.7);
+  transition: box-shadow 0.3s ease-in-out;
+}
